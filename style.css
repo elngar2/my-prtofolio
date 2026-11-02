@@ -1,0 +1,127 @@
+:root{
+    --bg-color:#141414;
+    --second-bg-color:#191919;
+    --text-color:white;
+    --main-clor:#0077ff;
+}
+*{
+    font-family: 'Cairo',sans-serif;
+    box-sizing: border-box;
+}
+.top{
+    background-color: var(--bg-color);
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: solid 1px var(--main-clor);
+    height: 100px;
+}
+.container .logo{
+    color: var(--text-color);
+    text-decoration: none;
+
+}
+.logo span{
+    color: var(--main-clor);
+} 
+.links a{
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+    border-bottom: solid var(--main-clor);
+}
+.links a:hover{
+    color: var(--main-clor);
+    border: none;
+}
+@media (max-width: 576px) {
+    .links{
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+    }
+    .part2 .left h1,h3,h6 {
+        letter-spacing: 0;
+    }
+    .right img{
+        width:100%;
+    }
+    .part2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60rem !important;
+        max-height :60rem !important;
+    }
+    .right{
+        margin-top: 2rem;
+        width: 20rem;
+    }
+    .part3 img{
+        width: 10rem !important;
+    }
+
+
+}
+.part2{
+    height: 40rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.part2 .left {
+    letter-spacing: 5px;
+    font-weight:2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.left h1,h3,h6{
+    padding-top: 20px;
+    font-weight:900;
+}
+.left h1 span,h3 span{
+    color: var(--main-clor);
+}
+.left h6{
+    width: 30%;
+    font-weight:900;
+}
+.left button{
+    background-color: var(--main-clor);
+    border: none;
+    border-radius: 30px;
+}
+.right img{
+    border-radius: 100px;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.list-icon{
+    font-size: 2rem;
+}
+.left button{
+    margin-top: 2rem;
+}
+.part3{
+    flex-direction: row;
+    margin-top: 6rem;
+    align-items: center;
+    text-align: center;
+    height: 20rem;
+    height: fit-content;
+}
+.part3 h1,span,p{
+    font-weight: 900;
+}
+
+.part3 span{
+    color: var(--main-clor);
+}
+.part3 img{
+    border-radius: 100px;
+}
